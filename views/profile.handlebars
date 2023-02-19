@@ -22,6 +22,12 @@
     </div>
   </div>
   {{/if}}
+{{#unless exercises}}
+  <div class="container exercise-list">
+   <a role="button" href="/exerciseform"><span class="material-symbols-outlined text-center" style="z-index: -20; color:black" id="addicon2">
+        add
+      </span> Add Exercise:</a>
+      {{/unless}}
   <div style="display: flex; padding: 200px; height: 10px; ">
     <a role="button" href="/exerciseform"><span class="material-symbols-outlined text-center"
         style="color: rgb(0, 0, 0); font-size: 100px;" id="addicon">
