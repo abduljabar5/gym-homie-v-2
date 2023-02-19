@@ -1,48 +1,51 @@
+
+ <header>
+        <video class="video" src="/css/images/Dynamic Personal Training  Life Time.mp4" autoplay muted loop></video><div class="square"></div>
+      </header>
 <div class="login-container">
  <!--  add conditional if statement if logged in dont show login and signup -->
 <div class="login-form login">
      <h2 class="text-center">Login</h2>
      <br>
  <div class="mb-3 row" >
-    <label for="inputEmail" class="col-sm-2 col-form-label" id="email">Email</label>
-    <div class="col-sm-10">
-      <input type="text" class="form-control" id="loginemail">
+    <div class="col-sm-10 mx-auto">
+      <input type="text" class="form-control" placeholder="Email" list="datalistOptions" id="loginemail">
+      <datalist id="datalistOptions">
+  <option value="a@gmail.com">
+  <option value="New York">
+</datalist>
     </div>
   </div>
   <div class="mb-3 row">
-    <label for="inputPassword" class="col-sm-2 col-form-label" id="password">Password </label>
-    <div class="col-sm-10">
-      <input type="password" class="form-control" id="loginpassword">
+    <div class="col-sm-10 mx-auto">
+      <input type="password" class="form-control" id="loginpassword" placeholder="Password">
     </div>
     <div class="form-group">
-    <button class="btn btn-dark" id="loginbtn" type="submit">login</button>
+    <button class="btn btn-dark formbtn" id="loginbtn" type="submit">login</button>
   </div>
   </div>
 </div>
 <!-- signup -->
-<div class="login-form logout">
-    <h2 class="text-center">Signup</h2>
+<div class="login-form logout text-bg-dark">
+    <h2 class="text-center text-light">Signup</h2>
     <br>
     <div class="mb-3 row ">
-      <label for="inputEmail" class="col-sm-2 col-form-label">Username</label>
-      <div class="col-sm-10">
-        <input type="text" class="form-control" id="username">
+      <div class="col-sm-10 mx-auto">
+        <input type="text" class="form-control "placeholder="Username" id="username">
       </div>
     </div>
  <div class="mb-3 row ">
-    <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
-    <div class="col-sm-10">
-      <input type="text" class="form-control" id="signupemail">
+    <div class="col-sm-10 mx-auto">
+      <input type="text" class="form-control"placeholder="Email" id="signupemail">
     </div>
   </div>
   <div class="mb-3 row">
-    <label for="inputPassword" class="col-sm-2 col-form-label">Password </label>
-    <div class="col-sm-10">
-      <input type="password" class="form-control" id="signuppassword">
+    <div class="col-sm-10 mx-auto">
+      <input type="password" class="form-control"  placeholder="Password" id="signuppassword">
     </div>
     <br>
     <div class="form-group">
-    <button class="btn btn-dark" id="sighupbtn" type="submit">Sign Up</button>
+    <button class="btn btn-dark formbtn" id="sighupbtn" type="submit">Sign Up</button>
   </div>
   </div>
 </div>

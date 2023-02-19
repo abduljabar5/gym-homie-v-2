@@ -28,20 +28,12 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link active text-light" aria-current="page" href="/">Home</a>
-          {{#if logged_in}}
+          <a class="nav-link active text-light" aria-current="page" href="/profile">Home</a>
           <a class="nav-link abled text-light" href="/workouts">Workout Plans</a>
-          {{else}}
-          <a class="nav-link disabled text-light" href="/workouts">Workout Plans</a>
-
-          {{/if}}
-
           {{#if logged_in}}
-          <a class="nav-link abled text-light" href="/profile">My Profile</a>
+          <a class="nav-link disabled text-light" href="/profile">My Profile</a>
           <a class="nav-link text-light" id="logoutbtn" role="button">Logout</a>
           {{/if}}
-          
-
         </div>
       </div>
 
@@ -49,7 +41,7 @@
     </div>
     </div>
   </nav>
-  <main class="container container-fluid mt-5">
+  <main>
     {{{ body }}}
   </main>
   <footer>

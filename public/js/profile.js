@@ -2,8 +2,9 @@
   const delButtonHandler = async (event) => {
     if (event.target.hasAttribute('data-id')) {
       const id = event.target.getAttribute('data-id');
-      
-      const response = await fetch(`/api/exercise/${id}`, {
+      const deleting = window.confirm("Are you sure you want to delete your workout? There no way to recover if you decide to proceed!")
+      if (deleting){
+        const response = await fetch(`/api/exercise/${id}`, {
         method: 'DELETE',
       });
   
@@ -12,6 +13,8 @@
       } else {
         alert('Failed to delete project');
       }
+      }
+      
     }
   };
   

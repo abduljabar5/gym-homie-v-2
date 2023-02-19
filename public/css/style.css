@@ -1,4 +1,9 @@
-
+body{
+  background-color: gray;
+}
+h3{
+  margin: 40px;
+}
 .gymhomie{
     font-family: 'Poiret One', 'cursive';
     font-size: x-large;
@@ -6,6 +11,26 @@
 .knav{
     background-color: black;
     
+}
+header::after{
+  content: '';
+  min-width: 100%;
+  z-index: -1;
+
+}
+
+.square{
+ z-index: -8;
+  background-color: black;
+  padding: 1000px;
+  position: fixed;
+  opacity: 0.5;
+}
+
+.video{
+  width: 1900px;
+  z-index: -10;
+  position: fixed;
 }
 .login-container{
    
@@ -27,7 +52,7 @@
     border-radius: 20px;
     margin: 60px;
 }
-.btn{
+.formbtn{
     margin: 10px;
 } 
 
@@ -51,12 +76,17 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.pastlogs{
-    max-height: 200px;
-}
 .box{
     display: flex;
     flex-direction: column;
+}
+.logsbackground{
+  width: 400px;
+  height: 200%;
+  padding: 20px;
+
+  background-image: linear-gradient(to bottom,rgb(10, 0, 37), gray);
+  border-radius:30px ;
 }
 .logs-container {
     width: 400px;
@@ -81,18 +111,18 @@
   
   .eachlog {
     text-align: center;
-    background-color: rgb(168, 168, 168);
+    background-color: rgb(101, 101, 101);
     padding: 20px;
     border-radius: 10px;
     margin: 10px;
-    
+    position: relative;
     transition: 1s;
   }
   .eachlog:hover{
     border-top: 20px;
-    border-color: aqua;
     box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.5);
    scale: 110%;
+   margin-bottom: 70px;
   }
   .eachlog small {
     float: left;
@@ -131,3 +161,60 @@
     text-decoration: none;
     color: rgb(0, 0, 0);
   }
+
+.eachlog {
+  position: relative;
+}
+
+.eachlog .btn-danger {
+  opacity: 0;
+  transition: all 0.5s;
+  width: 50%;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.eachlog:hover .btn-danger {
+  transition-delay: 1.5s;
+  opacity: 1;
+  width: 100%;
+  bottom: -37px;
+}
+.workout-plan {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: #f8f8f8;
+}
+
+.workout {
+  padding: 20px;
+  background-color: #212529;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.workout h3 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.workout p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+.pagesselect{
+  display: grid;
+  justify-content: center;
+}
+.show{
+  opacity: 1;
+ transition: 3s;
+}
+.hide{
+  opacity: 0;
+  transition: 4s;
+}
