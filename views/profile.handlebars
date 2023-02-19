@@ -5,11 +5,15 @@
   {{#if exercises}}
   <div style="display: flex; height: 600px; overflow: scroll; margin: 30px; border-radius:30px;">
     <div class="logsbackground" > <span class="text-center" style="font-size: 40px; color:rgb(167, 167, 167);">Logs</span>
+    <a role="button" href="/exerciseform"><span class="material-symbols-outlined text-center" id="addicon2">
+        add
+      </span></a>
       {{#each exercises as |exercise|}}
-      <div class="text-center eachlog" href="/workout/{{exercise.id}}">
+      <a href="/workout/{{exercise.id}}">
+      <div class="text-center eachlog">
         <small>{{exercise.duration}}min</small>
-        <div class="separator"></div> <a href="/workout/{{exercise.id}}">{{exercise.exercise_name}}</a> 
-     
+        <div class="separator"></div>{{exercise.exercise_name}}
+     </a>
       {{!-- <div class="d-grid gap-2 col-12 m-0 mx-auto"> --}}
         <button class="btn btn-sm btn-danger" id="logbutton" data-id="{{exercise.id}}">DELETE</button>
       {{!-- </div> --}}

@@ -189,6 +189,12 @@ header::after{
   text-align: center;
   color: #f8f8f8;
 }
+.workout-plan h2{
+  margin: 20px;
+  font-size: 40px;
+  font-family: Anton;
+  color: #212529;
+}
 
 .workout {
   padding: 20px;
@@ -217,4 +223,97 @@ header::after{
 .hide{
   opacity: 0;
   transition: 4s;
+}
+.new-exercise-form {
+  background-color: #f9f9f9;
+  border: 1px solid #212529;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.new-exercise-form h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.new-exercise-form label {
+  display: block;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.new-exercise-form .form-input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+.new-exercise-form select {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+.new-exercise-form .form-group {
+  margin-bottom: 1rem;
+}
+
+.new-exercise-form .btn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  background-color: #001327;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.new-exercise-form .btn:hover {
+  background-color: #696969;
+}
+#addicon{
+  color: rgb(0, 0, 0);
+   font-size: 100px;
+}
+#addicon2{
+  display: none;
+  
+}
+@media (max-width: 1300px) {
+  .navbar-nav {
+    flex-direction: column;
+  }
+  .navbar-nav .nav-link {
+    padding: 0.5rem 0;
+    margin: 0.5rem 0;
+    border-top: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(249, 247, 247);
+  }
+  .navbar-nav .nav-link:last-child {
+    border-bottom: none;
+  }
+  #addicon{
+    display: none;
+  }
+  #addicon2{
+    display: block;
+    font-size: 60px;
+    color: rgb(88, 88, 88);
+    float: right;
+  }
 }
